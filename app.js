@@ -11,9 +11,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect(process.env.MONGO_URI, {
-    user: process.env.MONGO_USERNAME,
-    pass: process.env.MONGO_PASSWORD,
+mongoose.connect('mongodb+srv://supercluster.d83jj.mongodb.net/superData', {
+    user: 'superuser',
+    pass: 'SuperPassword',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, function(err) {
@@ -79,8 +79,8 @@ app.get('/ready',   function(req, res) {
     });
 })
 
-app.listen(3000, () => {
-    console.log("Server successfully running on port - " +3000);
+app.listen(3100, () => {
+    console.log("Server successfully running on port - " +3100);
 })
 
 
