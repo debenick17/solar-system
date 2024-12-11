@@ -27,7 +27,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Unit Testing
+      - name: Starting Project
         run: npm start
 
       - name: Unit Testing
