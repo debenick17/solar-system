@@ -46,10 +46,9 @@ NOTE:
 - Delete the .git folder by running the command `rm -rf .git`
 - Go to github and create a repository, name it "**solar-system**"
 - Follow the instructions and push an existing repository to newly created repository
-- Create a `Dockerfile` in the root directory of the project
-- Create A `.dockerignore` file in the root directory
-- Create a folder named ".github". In that folder create another folder "workflows", create a file named `ci.yml` in workflows folder for the GitHub Actions workflows
-- Copy the content from [here]() and go through it
+- Create a `Dockerfile` in the root directory of the project. Copy the content from [here](https://github.com/debenick17/solar-project/blob/main/Dockerfile)
+- Create A `.dockerignore` file in the root directory. Copy the content from [here](https://github.com/debenick17/solar-project/blob/main/.dockerignore)
+- Create a folder named ".github". In that folder create another folder "workflows", create a file named `ci.yml` in workflows folder for the GitHub Actions workflows. Copy the content from [here](https://github.com/debenick17/solar-project/blob/main/github/workflows/solar-system.yml) and go through it
 - Create the respective environment variable (MONGO_USERNAME with value "superuser") and secret (MONGO_PASSWORD with value "SuperPassword") in your Github Actions. To do that go to your github project repository settings ---> **Security** ---> **Secrets and varaibles** and click on `Actions`
 - Save everything then git add, commit and push to the git repository you created
 - Go to GitHub and click **Actions** in the project repository to see the actions running
